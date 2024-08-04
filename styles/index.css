@@ -57,6 +57,7 @@ body{
     clip-path: inset(0 100% 0 0);
    }
 }
+
 #navSelectBox{
     display: flex;
     justify-content: space-between;
@@ -115,6 +116,10 @@ body{
     cursor: pointer;
 }
 
+#skillsBox ul li{
+    margin-bottom: 10px;
+}
+
 #boxesCont{
     display: flex;
     justify-content: center;
@@ -133,6 +138,40 @@ body{
         left: 0;
         opacity: 1;
     }
+}
+
+/* Handling resonsiveness */
+@media (max-width: 600px) {
+    #boxesCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    #descriptionBox, #skillsBox{
+        margin-bottom: 10px;
+        width: 70%;
+    }
+
+    #profileHeadingBox{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #navBox{
+        font-size: 12px;
+    }
+    .navSelectItems{
+        font-size: 10px;
+        padding: 2px 2px 2px 2px;
+        text-align: center;
+    }
+
+    #profileHeadingPhotoName{
+        margin-bottom: 15px;
+    }
+
 }
 
 /* this is the start of profile below the nav bar*/
