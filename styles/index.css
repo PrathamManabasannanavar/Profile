@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #e8f5e9;
+    margin-top: 45px;
+    background-image: url("../assets/backgroundjpg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#navBox{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6fc375;
+    z-index: 100;
+}
+
+#profileNameBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2f4f4f;
+    margin-left: 1px;
+}
+
+#profileNameBox img{
+    height: 40px;
+    padding: 1px;
+    margin-right: 5px;
+}
+
+#profileNameBox div{    /*name*/
+    font-weight: bold;
+    animation-name: nameAnimation;
+    animation-duration: 8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nameAnimation {
+   0%{
+    clip-path: inset(0 100% 0 0);
+   }
+   65%{
+    clip-path: inset(0 0 0 0);
+   }
+   100%{
+    clip-path: inset(0 100% 0 0);
+   }
+}
+#navSelectBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navSelectItems{
+    /* margin-right: 4px; */
+    padding: 2px 10px 2px 4px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2f4f4f;
+    text-decoration: none;
+}
+
+.navSelectItems:hover{
+    text-decoration: underline;
+}
+
+#contentBox{
+    margin-top: 50px;
+}
+
+#descriptionBox{
+    width: 30%;
+    font-size: large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color: rgb(92, 92, 142); */
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 10px;
+    opacity: 1;
+    border: 1px solid grey;
+    margin-right: 20px;
+    transition:all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+#skillsBox{
+    width: 30%;
+    font-size: large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color: rgb(92, 92, 142); */
+    backdrop-filter: blur(25px);
+    padding: 30px;
+    border-radius: 10px;
+    opacity: 1;
+    border: 1px solid grey;
+    margin-right: 20px;
+    transition:all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+#skillsBox:hover, #descriptionBox:hover{
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+#boxesCont{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    animation: boxAnimation;
+    animation-duration: 3s;
+    color: rgba(255, 166, 0, 0.786);
+}
+
+@keyframes boxAnimation {
+    from{
+        left: -400px;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+/* this is the start of profile below the nav bar*/
+
+#profileHeadingBox{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(99, 186, 199);
+    font-family: Arial, Helvetica, sans-serif;
+    backdrop-filter: blur(5px);
+    font-size: larger;
+    cursor: default;
+    animation: descriptionAnimation;
+    animation-duration: 1s;
+}
+
+@keyframes descriptionAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#profileHeadingBox img{
+    height: 150px;
+    margin-bottom: 8px;
+}
+
+#profileHeadingPhotoName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: aquamarine;
+    text-shadow:  0px 1px 2px red;
+}
+
+/* github and GFG images */
+
+#gfgGithubBox{
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    height: 20px;
+    width: 20px;;
+}
+
+.gfgGithubImages{
+    height: 32px; 
+    width: 32px; 
+    border-radius: 20%; 
+    margin-top: 10px;
+}
