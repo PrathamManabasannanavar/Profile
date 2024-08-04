@@ -76,3 +76,24 @@ body{
     clip-path: inset(0 100% 0 0);
    }
 }
+
+@media (max-width: 600px) {
+    
+    #profileHeadingBox{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #navBox{
+        font-size: 15px;
+    }
+    .navSelectItems{
+        font-size: 11px;
+        padding: 2px 2px 2px 2px;
+        text-align: center;
+    }
+
+    #profileHeadingPhotoName{
+        margin-bottom: 20px;
+    }
+}

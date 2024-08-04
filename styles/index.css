@@ -151,6 +151,7 @@ body{
     }
     #descriptionBox, #skillsBox{
         margin-bottom: 10px;
+        margin-right: 0px;
         width: 70%;
     }
 
@@ -160,16 +161,20 @@ body{
     }
 
     #navBox{
-        font-size: 12px;
+        font-size: 15px;
     }
     .navSelectItems{
-        font-size: 10px;
+        font-size: 11px;
         padding: 2px 2px 2px 2px;
         text-align: center;
     }
 
     #profileHeadingPhotoName{
-        margin-bottom: 15px;
+        margin-bottom: 17px;
+    }
+
+    #myIntro{
+        font-size: 14px;
     }
 
 }
