@@ -53,6 +53,8 @@ body{
 
 #profileNameBox img{
     height: 40px;
+    width: 40px;
+    border-radius: 50%;
     padding: 1px;
     margin-right: 5px;
 }
@@ -88,12 +90,36 @@ body{
         font-size: 15px;
     }
     .navSelectItems{
-        font-size: 11px;
+        font-size: 13px;
         padding: 2px 2px 2px 2px;
         text-align: center;
     }
 
     #profileHeadingPhotoName{
         margin-bottom: 20px;
+    }
+}
+
+
+/* start of the content styling */
+#contactHeading{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: orange;
+    animation: txtAnimation;
+    animation-duration: 2.5s;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes txtAnimation {
+    from{
+        clip-path: inset(0 100% 0 100%);
+        opacity: 0.5;
+    }
+    to{
+        clip-path: inset(0 0 0 0);
+        opacity: 1;
     }
 }

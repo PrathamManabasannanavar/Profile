@@ -34,7 +34,8 @@ body{
 
 #profileNameBox img{
     height: 40px;
-    padding: 1px;
+    padding: 2px;
+    border-radius: 50%;
     margin-right: 5px;
 }
 
@@ -158,19 +159,21 @@ body{
     #profileHeadingBox{
         flex-direction: column;
         text-align: center;
+        margin: 10px;
     }
 
     #navBox{
         font-size: 15px;
     }
     .navSelectItems{
-        font-size: 11px;
+        font-size: 13px;
         padding: 2px 2px 2px 2px;
         text-align: center;
     }
 
     #profileHeadingPhotoName{
         margin-bottom: 17px;
+        width: 65%;
     }
 
     #myIntro{
@@ -192,7 +195,7 @@ body{
     font-size: larger;
     cursor: default;
     animation: descriptionAnimation;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 @keyframes descriptionAnimation {
@@ -218,6 +221,11 @@ body{
     text-shadow:  0px 1px 2px red;
 }
 
+#profileHeadingPhotoName img{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
 /* github and GFG images */
 
 #gfgGithubBox{
