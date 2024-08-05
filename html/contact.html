@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    <!-- importing the cdn from online -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../styles/contact.css">
 </head>
+
 <body>
     <div id="navBox">
         <div id="profileNameBox">
@@ -19,9 +23,63 @@
         </div>
     </div>
 
-    <!-- start of the form -->
-    <div id="contactHeading">
-        Explore my profiles at different platforms
+    <!-- content -->
+     <div id="contactHeading">
+        Explore my profiles in the other Platforms
+     </div>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div  class="swiper-slide">
+                <div  class="imageBox">
+                    <a href="https://www.geeksforgeeks.org/user/pratham2ugvo/">
+                        <img src="../assets/gfg.png" alt="profile"  class="slideImageElements">
+                        <div class="platformNames">Geeks For Geeks</div>
+                    </a>
+                    <a href="https://www.geeksforgeeks.org/user/pratham2ugvo/">
+                         pratham2ugvo
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div  class="imageBox">
+                    <a href="https://github.com/PrathamManabasannanavar">
+                        <img src="../assets/github.png" alt="profile" class="slideImageElements">
+                        <div class="platformNames">Github</div>
+                    </a>
+                    <a href="https://github.com/PrathamManabasannanavar">
+                         PrathamManabasannanavar
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div  class="imageBox">
+                    <a href="https://in.linkedin.com/in/pratham-manabasannanavar-a72361260">
+                        <img src="../assets/linkedin.png" alt="profile" class="slideImageElements" style="border-radius: 20px;">
+                        <div class="platformNames">LinkedIn</div>
+                    </a>
+                    <a href="https://in.linkedin.com/in/pratham-manabasannanavar-a72361260">
+                        Pratham Manabasannanavar
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination">
+            
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../script/contact.js"></script>
 </html>
