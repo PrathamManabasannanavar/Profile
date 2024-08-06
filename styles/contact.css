@@ -104,7 +104,7 @@ body{
 /* start of the content styling */
 #contactHeading{
     text-align: center;
-    font-size: x-large;
+    font-size: large;
     font-weight: 900;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: orange;
@@ -203,14 +203,15 @@ body{
         font-size: 15px;
     }
     .navSelectItems{
-        font-size: 13px;
+        font-size: 14.5px;
         padding: 2px 2px 2px 2px;
         text-align: center;
     }
 
     .swiper {
-        width: 80%;
-        height: 50vh;
+        width: 93%;
+        height: 45vh;
+        border-radius: 20px;
     }
 
     .slideImageElements{
@@ -246,7 +247,7 @@ body{
     }
 
     .swiper-wrapper{
-        margin: 75px 0 0 0;
+        margin: 25% 0 0 0;
     }
     
 }
