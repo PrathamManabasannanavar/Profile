@@ -141,8 +141,12 @@ body{
     }
 }
 
-/* Handling resonsiveness */
-@media (max-width: 600px) {
+#myIntro{
+    font-size: 0.8em;
+}
+
+/* Handling responsiveness */
+@media (max-width: 570px) {
     #boxesCont{
         display: flex;
         flex-direction: column;
@@ -154,6 +158,7 @@ body{
         margin-bottom: 10px;
         margin-right: 0px;
         width: 70%;
+        font-size: 0.85em;
     }
 
     #profileHeadingBox{
@@ -166,7 +171,7 @@ body{
         font-size: 15px;
     }
     .navSelectItems{
-        font-size: 13px;
+        font-size: 14.5px;
         padding: 2px 2px 2px 2px;
         text-align: center;
     }
@@ -177,7 +182,7 @@ body{
     }
 
     #myIntro{
-        font-size: 14px;
+        font-size: 0.75em;
     }
 
 }
