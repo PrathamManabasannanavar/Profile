@@ -225,7 +225,7 @@ body{
         border-radius: 50%;
         margin-bottom: 5px;
         margin-left: 10px;
-        margin-right: 7px;
+        padding-right: 5px;
     }
     
     #gfgImage{
