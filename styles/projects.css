@@ -1,0 +1,130 @@
+
+/* navigation bar styling */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #e8f5e9;
+    margin-top: 45px;
+    background-image: url("../assets/backgroundjpg.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#navSelectBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navSelectItems{
+    /* margin-right: 4px; */
+    padding: 2px 10px 2px 4px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2f4f4f;
+    text-decoration: none;
+}
+
+.navSelectItems:hover{
+    text-decoration: underline;
+}
+
+#navBox{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6fc375;
+    z-index: 100;
+}
+
+#profileNameBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2f4f4f;
+    margin-left: 1px;
+}
+
+#profileNameBox img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 5px;
+}
+
+#profileNameBox div{    /*name*/
+    font-weight: bold;
+    animation-name: nameAnimation;
+    animation-duration: 8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nameAnimation {
+   0%{
+    clip-path: inset(0 100% 0 0);
+   }
+   65%{
+    clip-path: inset(0 0 0 0);
+   }
+   100%{
+    clip-path: inset(0 100% 0 0);
+   }
+}
+
+/* content styling */
+#searchBarBox{
+    display: flex;
+    justify-content: center;
+}
+
+#searchBar{
+    width: 50%;
+    height: 25px;
+    padding: 2px 5px 2px 5px;
+    background-color: aliceblue;
+}
+
+#searchBar:focus{
+    outline: none;
+}
+
+#contentBox{
+    margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   color: aqua;
+   font-size: large;
+}
+
+#projectsBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* width: 50%; */
+    row-gap: 20px;
+    column-gap: 15px;
+    background-color: rgba(222, 185, 117, 0.553);
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+#projectsBox:hover{
+    cursor: default;
+}
+
+#projectsBox div a{
+    text-decoration: none;
+    color: aqua;
+}
+
+#projectsBox div:hover{
+    background-color: rgba(162, 132, 75, 0.553);;
+}

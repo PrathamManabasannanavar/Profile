@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XOX game</title>
+    <link rel="stylesheet" href="XOX.css">
+</head>
+<body>
+    <div id="headingBox">
+        Welcome to XOX game
+    </div>
+    <div id="xoxBox">
+
+        <div id="btnsBox">
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+            <button class="btns"></button>
+        </div>
+        <div class="players">
+            Player1 score: 
+            <span id="player1">0</span>
+        </div>
+        <div class="players">
+            Player2 score: 
+            <span id="player2">0</span>
+        </div>
+        <div id="submitClearBox">
+            <button class="setRestBtn" onclick="resetFunct()">Reset</button>
+            <button class="setRestBtn" onclick="clearBox()">clear</button>
+        </div>
+            
+        <div id="resultBox"></div>
+    </div>
+</body>
+<script src="XOX.js"></script>
+</html>

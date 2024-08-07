@@ -1,0 +1,162 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 650px;
+    background-image: url("lockscreenImage.jfif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+#blurBox{
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(25px);
+}
+
+#contentBox{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    font-size: large;
+    width: 100%;
+    height: 100%;
+}
+
+#heightAdjust{
+    height: 15vh;
+}
+
+#timeBox{
+    font-size: 50px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#dateBox{
+    color: aliceblue;
+    width: 100%;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#loginBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+#profilePhoto{
+    width: 150px;
+    height: 150px;
+}
+
+#userPhotoBox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+#userpass {
+    position: relative;
+}
+
+
+#password{
+    height: 13px;
+    /* font-size: large; */
+    color:white;
+    background-color: rgba(0, 0, 0, 0.756);
+    /* opacity: 0.5; */
+    border-radius: 2px;
+    padding: 5px 3px 5px 3px;
+    margin-bottom: 20px;
+}
+
+#username{
+    font-size: larger;
+    color:rgba(240, 248, 255, 0.912);
+    font-weight:500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    cursor: default;
+}
+
+#forgotPin{
+    color: white;
+    opacity: 0.7;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    
+#forgotPin:hover{
+    cursor:pointer;
+    text-decoration: underline;
+    opacity: 0.75;
+}
+
+#optionsBox{
+    position: fixed;
+    bottom: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.usernames{
+    display: flex;
+    align-items: center;
+    padding: 6px 10px 6px 6px;
+    opacity: 1;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-weight:400;
+}
+
+.usernames:hover{
+    background-color: rgba(29, 29, 129, 0.4);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#iconBox{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    /* background-color: black; */
+    opacity: 0.6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.iconCont{
+    padding: 6px 6px 6px 6px;
+    height: 15px;
+    width: 15px;
+    margin-right: 8px;
+}
+
+.iconCont:hover{
+    background-color: rgb(29, 29, 143);
+    border-radius: 2px;
+}
+
+.usersIcon{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}

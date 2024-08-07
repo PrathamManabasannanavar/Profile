@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calci.css">
+</head>
+
+<body>
+    <div style="height: 100px;"></div>
+    <div id="boxBackground">
+        <div id="calciBorder">
+            <input type="text" name="screen" id="screen">
+            <div id="btnOptrBox">
+                <div id="btnBox">
+                    <button class="btns" value="1">1</button>
+                    <button class="btns" value="2">2</button>
+                    <button class="btns" value="3">3</button>
+                    <button class="btns" value="4">4</button>
+                    <button class="btns" value="5">5</button>
+                    <button class="btns" value="6">6</button>
+                    <button class="btns" value="7">7</button>
+                    <button class="btns" value="8">8</button>
+                    <button class="btns" value="9">9</button>
+                    <button class="btns" value="0">0</button>
+                    <button value="=" onclick="computeMath()" class="clrEqualBtn">=</button>
+                    <button value="CLR" onclick="clearScreen()" class="clrEqualBtn">CLR</button>
+                </div>
+                <div id="optrBox">
+                    <button class="optr" value="+">+</button>
+                    <button class="optr" value="-">-</button>
+                    <button class="optr" value="*">*</button>
+                    <button class="optr" value="/">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Calci.js"></script>
+</body>
+
+</html>

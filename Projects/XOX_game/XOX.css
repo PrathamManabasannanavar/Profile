@@ -1,0 +1,64 @@
+#btnsBox{
+    border: 1px solid black;
+    background-color: rgba(255, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+#xoxBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns{
+    color: blue;
+    background-color: rgba(255, 255, 255, 0.588);
+    height:64.99px;
+    border-radius: 2px;
+    font-size: large;
+}
+
+/* .btns:active{
+    background-color: rgba(255, 0, 0, 0.1);
+} */
+
+#submitClearBox{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#headingBox{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    margin-bottom: 7px;
+}
+
+.setRestBtn{
+    background-color: rgba(0, 128, 0, 0.403);
+    border-radius: 15px;
+    height: 30px;
+    width: 85px;
+    margin-right: 4px;
+}
+
+.players{
+    color: rgb(240, 11, 11);
+    font-family:monospace;
+    margin-bottom: 2px;
+    font-size: large;
+}
+
+#resultBox{
+    font-size: large;
+    color:deeppink
+}
