@@ -14,6 +14,16 @@ body{
     height: 100%;
 }
 
+@keyframes fadeAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
 #navSelectBox{
     display: flex;
     justify-content: space-between;
@@ -83,6 +93,8 @@ body{
 #searchBarBox{
     display: flex;
     justify-content: center;
+    animation: fadeAnimation;
+    animation-duration: 2s;
 }
 
 #searchBar{
@@ -97,11 +109,27 @@ body{
 }
 
 #contentBox{
-    margin-top: 20px;
+   margin-top: 20px;
    display: flex;
    justify-content: center;
    color: aqua;
    font-size: large;
+   animation: fadeAnimation;
+   animation-duration: 3s;
+}
+
+@media (max-width: 570px) {
+    body{
+        background-repeat: round;
+    }
+    #contentBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        font-size: small;
+    }
 }
 
 #projectsBox{
