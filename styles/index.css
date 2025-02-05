@@ -9,7 +9,7 @@ body{
     background-image: url("../assets/backgroundjpg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 700px;
 }
 
 #navBox{
@@ -129,6 +129,11 @@ body{
     animation-duration: 3s;
     color: rgba(255, 166, 0, 0.786);
 }
+
+#descriptionBox p, #skillsBox ul{
+    font-size: 0.9em;
+}
+
 
 @keyframes boxAnimation {
     from{
